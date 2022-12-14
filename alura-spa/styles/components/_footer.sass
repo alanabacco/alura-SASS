@@ -1,0 +1,14 @@
+@import "../abstract/variaveis"
+
+@mixin bg-cores($cores...)
+    background: linear-gradient(120deg, $cores)
+
+footer
+    text-align: center
+    font-size: calc($tamanho-do-texto / 3)
+    font-weight: 300
+    padding: 0.8rem
+    @include bg-cores($cor-primaria, $cor-secundaria, $cor-terciaria,  $cor-terciaria, $cor-primaria)
+
+    i 
+        color: red
